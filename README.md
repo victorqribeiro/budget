@@ -18,5 +18,5 @@ The app was written in portuguese, but a quick hack was made to accept other lan
 Make a copy of the en.json file and replace the sentences, translating to the desired language. After tat, change the variable langSetting in js/main.js passing the name of the json file you made:
 
 ```javascript
-let langSettgin = 'js/en.json';
+let langSetting = 'js/en.json';
 ```
