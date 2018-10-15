@@ -1,0 +1,16 @@
+{
+  "name": "Budget",
+  "shortname": "Budget",
+  "description": "A simply budget app that predicts where the expenses are made.",
+   "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "density": 1
+    }
+  ]
+}

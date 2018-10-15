@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title> Budget 1.0 </title>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+<link rel="stylesheet" href="css/main.css" />
+<script type="application/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="app">
+	<div id="menu">
+		<input type="button" id="despesa" value="Despesas" onClick="navegacao('abadespesas');">
+		<input type="button" id="lancamento" value="Lançamento" onClick="navegacao('abalancamento');">
+		<input type="button" id="config" value="Configurações" onClick="navegacao('abaconfiguracoes');">
+	</div>
+	<div id="abalancamento" class="aba">
+		<form id="despesaform">
+			<div class="row">
+				<input type="number" id="valor" placeholder="0.00" autocomplete="off" onKeyUp="predizCategoria();" onChange="predizCategoria();">
+			</div>
+			<div class="row">
+				<select id="local">
+				</select>
+				<input type="button" value="Ok" onClick="lancaDespesa();">
+			</div>
+		</form>
+	</div>
+	<div id="abadespesas" class="aba">
+		<div id="conteudodespesas" class="conteudo"></div>
+		<div id="apagardespesa" class="divapagarbotao"><input type="button" id="apagarbotao" value="Apagar" onClick="removeDespesa();"></div>
+	</div>
+	<div id="abaconfiguracoes" class="aba">
+		<div id="configPanel">
+			<input type="button" id="categoriasbtn" value="Categorias" onClick="navegacao('abacategorias');" class="btn" />
+			<input type="button" id="resetarbtn" value="Resetar" onClick="resetar();" class="btn" style="margin-top: 0.2em;" />
+		</div>
+	</div>
+	<div id="abacategorias" class="aba">
+		<div class="row">
+			<form id="categoriaform">
+				<input type="text" id="categoriainput" placeholder="Categoria" />
+				<input type="button" id="adicionacategoria" value="+" onClick="gravaCategorias();" />
+			</form>
+		</div>
+		<div id="categorias" class="conteudo"></div>
+		<div class="divapagarbotao"><input type="button" value="Apagar" id="apagarcategoria" onClick="removeCategorias();" /></div>
+	</div>
+</div>
+
+<div id="back"></div>
+<div id="alerta">
+	<div id="alertamsg"></div>
+	<div id="alertabotao"><input type="button" value="Ok!" onClick="alerta('hide');" /></div>
+</div>
+<div id="confirma">
+	<form id="confirmaform">
+		<div id="confirmamsg"></div>
+		<div id="confirmabotoes">
+			<input type="button" value="Cancelar" onClick="abreConfirma('hide');" />
+			<input type="button" value="Ok!" id="confirmabotao" />
+		</div>
+	</form>
+</div>
+</body>
+</html>

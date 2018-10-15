@@ -1,0 +1,150 @@
+html,body{
+	padding:0;
+	margin:0;
+	text-align:center;
+	font-family: Arial;
+	height:100%;
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input, select{
+	height:3em;
+	font-size:1em;
+}
+input[type=text],input[type=number],input[type=password]{
+	text-align:center;
+}
+input[type=button]{
+	min-width:90px;
+}
+input[type=checkbox]{
+	display:inline;
+	height:1.1em;
+	font-size:1.1em;
+}
+#abalancamento{
+	display:none;
+}
+#menu{
+	padding:10px;
+}
+#apagar{
+	display:none;
+}
+.divapagarbotao{
+	padding-top:10px;
+}
+.data{
+	display:table;
+	text-align:left;
+	width:90%;
+	margin: 0 auto;
+	background-color:rgb(200,200,200);
+	padding:5px;
+}
+.despesa{
+	display:table;
+	text-align:right;
+	width:90%;
+	margin: 0 auto;
+}
+#despesacell1{
+	display:table-cell;
+	width:10%;
+}
+#despesacell2{
+	display:table-cell;
+	width:20%;
+}
+#despesacell3{
+	display:table-cell;
+	width:30%;
+}
+#despesacell4{
+	display:table-cell;
+	width:50%;
+}
+.lockinput{
+	min-width:200px!important;
+}
+.row{
+	padding-bottom:10px;
+}
+.valordia{
+	float:right;
+}
+.valormes{
+	display:inline;
+}
+.aba{
+	display:none;
+}
+.conteudo{
+	max-height:65vH;
+	height:60vH;
+	overflow:auto;
+	border:solid 1px rgb(200,200,200);
+	border-left:0;
+	border-right:0;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.categoriarow{
+	width:90%;
+	max-width: 300px;
+	text-align:left;
+	margin: auto auto;
+}
+#alerta{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  background: rgb(200,200,200);
+	border:solid 1px rgb(128,128,128);
+	display:none;
+}
+#alertamsg{
+	margin:20px;
+}
+#confirma{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  background: rgb(200,200,200);
+	border:solid 1px rgb(128,128,128);
+	display:none;
+}
+#confirmamsg{
+	margin:20px;
+}
+#back{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100vW;
+	height:100vH;
+	display:none;
+	z-index:9997;
+}
+#configPanel{
+	width: 50%;
+	min-width: 100px;
+	max-width: 250px;
+	margin: auto auto;
+}
+.btn{
+	display: block; 
+	width:100%; 
+}
