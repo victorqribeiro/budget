@@ -6,6 +6,8 @@ Budget is a JavaScript toy app that implements a [KNN](https://en.wikipedia.org/
 
 ![](budget.gif)
 
+A online version is hosted [here](https://victorribeiro.com/budget/). You can add it to your phone as an app, if you like.
+
 It uses the day of the week, the hour of the day and the value of the expense as features to predict the location of the purchase. 
 It's a toy app cause it stores data in the localStorage of the browser. It's not reliable or robust and the code is a bit messy; it was made as an exercise (or proof of concept) after a machine learning class.
 
