@@ -317,6 +317,12 @@ function previsao(_p,k=3){
 	return resposta;
 }
 window.onload = () => {
+	window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+		  window.applicationCache.swapCache();
+		  window.location.reload();
+    }
+  }, false);
 	fetch(langSetting)
 		.then( response => {
 		  response.json().then( result => {
