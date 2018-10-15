@@ -261,7 +261,7 @@ function resetar(confirmado=false){
 	abreConfirma("show", resetar);
 	if(confirmado){
 		localStorage.clear();
-		alerta("show",lang.reset);
+		init();
 	}
 }
 function predizCategoria(){
