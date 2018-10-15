@@ -1,7 +1,7 @@
 {
   "name": "Budget",
   "shortname": "Budget",
-  "description": "A simply budget app that predicts where the expenses are made.",
+  "description": "A simply budgeting app that predicts where the expenses are made.",
    "start_url": "index.html",
   "display": "fullscreen",
   "orientation": "portrait",
