@@ -1,4 +1,4 @@
-let lang;
+let langSetting = 'js/en.json', lang;
 
 function init(){
 	dias = lang.day
@@ -317,7 +317,7 @@ function previsao(_p,k=3){
 	return resposta;
 }
 window.onload = () => {
-	fetch('js/en.json')
+	fetch(langSetting)
 		.then( response => {
 		  response.json().then( result => {
 		  	lang = result;
