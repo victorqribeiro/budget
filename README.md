@@ -1,4 +1,6 @@
-# Budget - An (toy) app that predicts where the expenses are made.
+# Budget
+
+#### An (toy) app that predicts where the expenses are made.
 
 Budget is a JavaScript toy app that implements a [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to predict where the expense is being made. 
 
