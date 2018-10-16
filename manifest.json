@@ -1,9 +1,9 @@
 {
   "name": "Budget",
-  "shortname": "Budget",
+  "short_name": "Budget",
   "description": "A simply budgeting app that makes predictions",
   "start_url": "index.htm",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "icons": [
     {
