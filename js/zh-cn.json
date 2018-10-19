@@ -35,5 +35,7 @@
 	"moneyInvalid" : "输入错误！正确例子：105.50",
 	"noneExpanse" : "无消费！",
 	"reset" : "重置了！",
-	"confirm" : "确定？"
+	"confirm" : "确定？",
+	"accept" : "接受",
+	"cancel" : "取消"	
 }
