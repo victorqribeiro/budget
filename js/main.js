@@ -32,6 +32,8 @@ function traduzGUI(){
 	document.getElementById("resetarbtn").value = lang.menu.reset; 
 	document.getElementById("apagarbotao").value = lang.menu.erase;
 	document.getElementById("apagarcategoria").value = lang.menu.erase;
+	document.getElementById("cancelbotao").value = lang.cancel;
+	document.getElementById("confirmabotao").value = lang.accept;
 }
 function overwriteForms(){
 	document.getElementById("despesaform").addEventListener("submit", function(event){
